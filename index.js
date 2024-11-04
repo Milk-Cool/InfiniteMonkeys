@@ -3,6 +3,15 @@ import seedrandom from "seedrandom";
 export const letters = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
 
 /**
+ * Gets the seed based on current date
+ * 
+ * @returns {number} The seed
+ */
+export function getSeed() {
+    return Math.floor(new Date().getTime() / 1000);
+}
+
+/**
  * Generates text.
  * 
  * @param {number?} length The text length
@@ -11,7 +20,7 @@ export const letters = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
  */
 export function genText(length = 500, seed = null) {
     if(seed === null)
-        seed = Math.floor(new Date().getTime() / 1000);
+        seed = getSeed();
     const rng = seedrandom(seed);
     let text = "";
     for(let i = 0; i < length; i++)
