@@ -1,0 +1,14 @@
+*:not(#text) {
+    font-family: serif;
+}
+
+.center {
+    text-align: center;
+}
+
+#text {
+    display: inline-block;
+    width: 50ch;
+    font-family: monospace;
+    overflow-wrap: anywhere;
+}

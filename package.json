@@ -1,0 +1,30 @@
+{
+  "name": "infinitemonkeys",
+  "version": "0.1.0",
+  "description": "The infinite monkeys and infinite typewriters theorem as a website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/InfiniteMonkeys.git"
+  },
+  "keywords": [
+    "infinite",
+    "monkeys",
+    "theorem"
+  ],
+  "author": "Milk-Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/InfiniteMonkeys/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/InfiniteMonkeys#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "seedrandom": "^3.0.5"
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infinite monkeys theorem</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+
+        <meta name="title" content="Infinite monkeys theorem">
+        <meta name="description" content="This website demonstrates the infinite monkeys theorem and how it can theoretically output words, sentences and possible even whole texts!">
+        <meta name="keywords" content="infinite, monkeys, theorem, infinite monkeys, infinite theorem, monkeys theorem, infinite monkeys theorem, shakespeare">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Milk_Cool">
+    </head>
+    <body>
+        <div class="center">
+            <h1><a href="/">Infinite monkeys theorem</a></h1>
+            <form>
+                <input type="number" placeholder="Seed" name="t" value="<%= seed %>">
+                <input type="submit" value="Go!">
+            </form><br>
+            <span id="text"><%= text %></span>
+        </div>
+    </body>
+</html>
